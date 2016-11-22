@@ -29,7 +29,12 @@ public class ReportServices {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.parseMediaType("application/pdf"));
-        headers.setContentDispositionFormData(filename, filename);
+
+        headers.add("content-disposition", "inline;filename=" + filename);
+
+        //ga perlu ini kalo mau ditampilin di next tab, kalo pake ini artinya file langsung di unduh
+        //headers.setContentDispositionFormData(filename, filename);
+
         headers.setCacheControl("must-revalidate, post-check=0, pre-check=0");
         ResponseEntity<byte[]> response = new ResponseEntity<byte[]>(contents, headers, HttpStatus.OK);
         return response;
