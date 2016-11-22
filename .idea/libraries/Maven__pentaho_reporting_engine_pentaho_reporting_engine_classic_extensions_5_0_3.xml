@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho-reporting-engine:pentaho-reporting-engine-classic-extensions:5.0.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-classic-extensions/5.0.3/pentaho-reporting-engine-classic-extensions-5.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-classic-extensions/5.0.3/pentaho-reporting-engine-classic-extensions-5.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-classic-extensions/5.0.3/pentaho-reporting-engine-classic-extensions-5.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
