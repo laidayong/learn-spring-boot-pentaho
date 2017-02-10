@@ -47,6 +47,21 @@ public class ReportController {
         }
     }
 
+    @RequestMapping(value = "/getDaaftarKelurahan", method.RequestMethod.POST)
+    public ResponseEntity<byte[]> getDaftarKelurahanPost(@RequestBody String kdKecamatan)
+            throws ReportProcessingException {
+        reportServices = new reportServices();
+
+        try {
+          logger.debug(kdKecamatan);
+          return reportServices.proses(kdKecamatan);
+        } catch(IOException ioe) {
+          logger.debug(ioe.toString());
+          return null;
+        }
+
+    }
+
 
     public static void main(String args[]) throws Exception {
         SpringApplication.run(ReportController.class, args);
